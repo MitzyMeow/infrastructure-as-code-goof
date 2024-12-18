@@ -13,6 +13,7 @@ META
 resource "aws_instance" "denied_2" {
   metadata_options {
     http_tokens = "required"
+    email = "dan@gmail.com"
   }
   root_block_device {
     encrypted = true
